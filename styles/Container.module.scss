@@ -1,15 +1,14 @@
 
 
 .container {
-    height: 100vh;
     background-color: #E0E0E0;
 
-    .container_nav_wrapper {
+    .navigation_wrapper {
         display: flex;
         flex-direction: column;
         padding: 0 2rem;
 
-        .top_bar {
+        .navigation {
             display: flex;
             justify-content: space-between;
             background-color: skyblue;
@@ -21,25 +20,15 @@
             align-items: center;
             .top_bar_listItem {
                 padding: 0.5rem 1rem;
+                display: none;
+
             }
-            .menu_container {
-                background-color: rgb(224, 224, 224);
-                margin: 0 0.5rem;
-                width: 2rem;
-                height: 2rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                .menu_bar {
-                    width: 1.5rem;
-                    height: 0.25rem;
-                    margin: 0 auto;
-                    background-color: #fff;
-                }
-            }
+
+
+
         }
     }
-    .container_main_wrapper {
+    .main_wrapper {
         display: flex;
         flex-direction: column;
         padding: 0 2rem;
