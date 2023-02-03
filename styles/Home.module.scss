@@ -13,7 +13,7 @@
             width: 5rem;
             position: relative;
 
-            margin: 0 auto;
+            // margin: 0 auto;
             margin-bottom: 1rem;
             @media screen and (min-width: 640px) { 
                 width: 11rem;
@@ -22,7 +22,8 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 9999px;
-                filter: grayscale(100%);
+                // filter: grayscale(100%);
+
             }
         }
 
@@ -30,14 +31,15 @@
             display: flex;
             flex-direction: column;
             padding: 0 1rem;
-            h2 {
+            align-items: flex-start;
+            h1 {
                 margin-bottom: 1rem;
-                font-weight: normal;
-                color: #757575;
+
             }
             p {
                 line-height: 1.4;
                 margin-bottom: 3rem;
+                text-align:left;
             }
         }
     }

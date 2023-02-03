@@ -12,6 +12,11 @@ export default function Home() {
     <Container>
       <div className={styles.home}>
         <div className={styles.home_hero}>
+
+          <div className={styles.home_intro_container}>
+            <h1>
+              Zahid Aliyev
+            </h1>
           <div className={styles.image_wrapper}>
             <Image
               alt="Zahid Aliyev"
@@ -26,13 +31,6 @@ export default function Home() {
             ></Image>
             
           </div>
-          <div className={styles.home_intro_container}>
-            <h1>
-              Zahid Aliyev
-            </h1>
-            <h2>
-              Web enthusiast
-            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -41,7 +39,7 @@ export default function Home() {
         <h3>Recent Posts</h3>
 
         <div className={styles.home_posts_container}>
-          <Link className={styles.blog_post_card} href="/">
+          <Link className={styles.blog_post_card} href="">
               <div className={styles.blog_post_card__content_container}>
                 <div className={styles.blog_post_card__content_container__header_container}>
                   <h4 className={styles.blog_post_card__content_container__header}>

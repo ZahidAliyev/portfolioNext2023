@@ -5,8 +5,7 @@ import NextLink from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 
-export default function Container({children}) {
-  
+export default function Container({ children }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,20 +16,29 @@ export default function Container({children}) {
       </Head>
       <div className={styles.navigation_wrapper}>
         <nav className={styles.navigation}>
-          <div>
-              <MobileMenu/>
-            <NextLink className={styles.top_bar_listItem} href="/">
+        <div className={styles.logo}>
+        <NextLink className={styles.logo_link} href="/Home">
+            Z
+          </NextLink>
+        </div>
+
+
+          <div className={styles.top_bar}>
+            {/* <MobileMenu/> */}
+
+            <NextLink className={styles.top_bar_listItem} href="/Home">
               Home
             </NextLink>
-            <NextLink className={styles.top_bar_listItem} href="/">
-              Get in touch
+            <NextLink className={styles.top_bar_listItem} href="/About">
+              About
+            </NextLink>
+            <NextLink className={styles.top_bar_listItem} href="/Blog">
+              Blog
             </NextLink>
           </div>
         </nav>
       </div>
-      <main className={styles.main_wrapper}>
-        {children}
-      </main>
+      <main className={styles.main_wrapper}>{children}</main>
     </div>
   );
 }
